@@ -1,13 +1,3 @@
-/* Put your styles and imports here */
-body {
-	color: #fff;
-	background: #1d1f20;
-}
-
-.testRoot{
-	color: pink;
-}
-
 @import "importmepls.css";
 @import url("importmepls.css");
 
@@ -22,3 +12,26 @@ body {
 
 @import url("themes/yolo/angular.pcss");
 @import url("themes/yolo/react.css");
+
+:root {
+	--my-color: red;
+}
+
+:root {
+	--my-color: blue;
+}
+
+/* Put your styles and imports here */
+body {
+	color: #fff;
+	background: #1d1f20;
+}
+
+.testRoot{
+	color: pink;
+}
+
+.testRed{
+	color: var(--my-color); /* will be blue */
+}
+

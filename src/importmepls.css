@@ -1,3 +1,7 @@
+:root {
+    --my-color: green;
+}
+
 .test3{
-    color: yellow;
+    color: var(--my-color); /* will be blue, because main.css said so - brainfuck alert */
 }
